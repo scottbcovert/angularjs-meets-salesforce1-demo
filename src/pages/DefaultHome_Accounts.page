@@ -23,6 +23,15 @@
 <!-- End Panel Heading -->
 <!-- Panel Body -->
 <div class="panel-body container-fluid">
+<div class="row">
+	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 col-lg-offset-4 col-md-offset-4 col-sm-offset-4 col-xs-offset-4 text-center">
+	    <div class="input-group">
+          <span class="input-group-addon">Search</span>
+          <input type="text" class="form-control" ng-model="query"/>
+        </div>
+	</div>
+</div>
+<br/>
 <table class="table table-bordered table-hover table-striped">
 <thead>
 	<tr>
@@ -30,7 +39,7 @@
 	</tr>
 </thead>
 <tbody>
-	<tr ng-repeat="account in accounts">
+	<tr ng-repeat="account in accounts | filter:query">
 		<td>{{account.Name}}</td>
 	</tr>
 </tbody>

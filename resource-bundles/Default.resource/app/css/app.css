@@ -1,0 +1,205 @@
+/* app css stylesheet */
+
+/* Custom CSS
+
+.label-only {
+  opacity: 1 !important;
+}
+.ui-grid-header-viewport {
+  min-height: 50px;
+}
+.inlineCell span,a {
+  display: inline-block;
+  white-space: nowrap;
+}
+td.inlineCell {
+  white-space: nowrap;
+}
+.viewLinks span a {
+  color: inherit;
+}
+.viewLinks a {
+  color: inherit;
+}
+.viewLinks a:hover {
+  color: inherit;
+}
+.viewLinks span a:hover {
+  color: inherit;
+}
+tfoot tr {
+  background-color: LightGray;
+}
+tfoot td {
+  font-weight: bold;
+  white-space: nowrap;
+}
+td {
+    vertical-align: none;
+    padding: 3px !important;
+    color: inherit;
+}
+th {
+    text-align: center;
+}
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+.col-md-12 {
+  text-align:center;
+  margin-top:10px;
+}
+.col-md-3 {
+  text-align:center;
+  margin-top:15px;
+}
+.col-md-1 {
+  text-align:center;
+  margin-top:15px;
+}
+.visualstrap input{
+  max-width: 100%;
+}
+.features {
+    float: right;
+    width: 300px;
+    padding-left: 20px;
+}
+.features .heading {
+    font-size: 14px;
+    font-weight: bold;
+}
+.drop {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 12px;
+    border: 2px #f1f1f1 dashed;
+    border-radius: 5px;
+    line-height: 34px;
+    margin-right: 15px;
+}
+.drop.drag-over {
+    background: #5CB85C;
+    color: #fff
+}
+.transfer-box {
+    margin-bottom: 5px;
+}
+.transfer-box .progress {
+    margin-bottom: 0;
+}
+
+.thumbnail {
+    line-height: 20px;
+    margin-bottom: 5px;
+    overflow: hidden;
+    word-break: normal;
+}
+.thumbnail img {
+    max-width: 200px;
+    max-height: 150px;
+}
+
+.gallery-box {
+    width: 200px;
+    padding: 5px;
+    margin: 7px;
+    float: left;
+    min-height: 200px;
+    border: 1px solid #ddd;
+    overflow: hidden;
+}
+.gallery-box .progress {
+    margin-bottom: 0;
+}
+.gallery-box .thumbnail {
+    height: 188px;
+    width: 188px;
+}
+.gallery-box .title {
+    height: 22px;
+    overflow: hidden;
+    display: block;
+}
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+.panel-heading{
+    font-size: x-large;
+}
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }   
+
+.col-success {
+  background-color: #dff0d8;
+}
+.col-error{
+  background-color: #f2dede;
+}
+.col-warning {
+  background-color: #fcf8e3;
+}
+.col-info {
+  background-color: #d9edf7;
+}
+
+/* End Custom CSS */
+
+.my-custom-menu {
+  position: absolute;
+}
+ 
+.my-custom-menu .ui-grid-menu {
+  padding: 0px;
+}
+ 
+.my-custom-menu .ui-grid-menu-inner {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+  content: "";
+  padding: 0;
+}

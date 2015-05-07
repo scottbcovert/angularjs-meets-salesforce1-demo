@@ -13,6 +13,10 @@
     <script src="{!URLFOR($Resource.Default, 'app/lib/bootstrap/ui-bootstrap-tpls-0.11.2.min.js')}"/>
     <!-- ui-grid -->
     <script src="{!URLFOR($Resource.Default, 'app/lib/ui-grid/ui-grid.js')}"/>
+    <!-- lodash -->
+    <script src="{!URLFOR($Resource.Default, 'app/lib/lodash/lodash.min.js')}"/>
+    <!-- ngLoading -->
+    <script src="{!URLFOR($Resource.Default, 'app/lib/ngLoading/ngLoading.js')}"/>
     <!-- Angular App Files -->
     <script src="{!URLFOR($Resource.Default, 'app/js/directives.js')}"/>
     <script src="{!URLFOR($Resource.Default, 'app/js/filters.js')}"/>
@@ -23,6 +27,7 @@
     <apex:stylesheet value="{!URLFOR($Resource.Default, 'app/css/angular/1.3/angular-csp.css')}"/>
     <apex:stylesheet value="{!URLFOR($Resource.Default, 'app/css/app.css')}"/>
     <apex:stylesheet value="{!URLFOR($Resource.Default, 'app/css/ui-grid/ui-grid.min.css')}"/>
+    <apex:stylesheet value="{!URLFOR($Resource.Default, 'app/css/ngLoading/ngLoading.css')}"/>
 </head>
     <script>
         // Remember site prefix, if any, to support direct (logged-in) or Site-based usage.

@@ -6,4 +6,9 @@ global with sharing class DefaultController {
         return [SELECT Id, Name FROM Account];
     }
     
+    // Retrieve all contacts
+    @RemoteAction
+    global static list<Contact> getContacts(){
+    	return [SELECT Id, Name FROM Contact];
+    }
 }

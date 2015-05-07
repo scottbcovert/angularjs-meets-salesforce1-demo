@@ -8,5 +8,6 @@ myModule.
   config(['$routeProvider', function($routeProvider) {
     $routeProvider
     	.when('/', {templateUrl: sitePrefix+'/DefaultHome_Accounts', controller: 'HomeCtrl'})
+    	.when('/contacts', {templateUrl: sitePrefix+'/DefaultHome_Contacts', controller: 'ContactsCtrl'})
     	.otherwise({redirectTo: '/'});
   }]);

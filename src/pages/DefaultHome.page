@@ -40,7 +40,7 @@
     </body>
 </c:visualstrapblock>
 <!-- Import VisualStrap Components -->
-<c:importvisualstrap theme="lumen"/>
+<c:importvisualstrap theme="default"/>
 <!-- End Import VisualStrap Components -->
 </html>
 </apex:page>

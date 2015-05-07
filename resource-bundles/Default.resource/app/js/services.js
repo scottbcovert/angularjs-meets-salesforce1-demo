@@ -23,3 +23,22 @@ angular.module('Default.services', [])
 			return deferred.promise;
 		}
 	}])
+	.service('Contacts', ['$q', '$timeout', function($q, $timeout) {
+		this.get = function() {
+			var deferred = $q.defer();
+
+			Visualforce.remoting.Manager.invokeAction(
+				'DefaultController.getContacts',
+				function(result, event) {
+					$timeout(function() {
+						if (event) {
+						  deferred.resolve(result);
+						} else {
+						  deferred.reject(result);	
+						}
+					});
+				});
+
+			return deferred.promise;
+		}
+	}])

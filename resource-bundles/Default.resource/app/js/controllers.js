@@ -9,6 +9,15 @@ angular.module('Default.controllers', [])
   			$scope.accounts = result;
   		},
   		function(reason){
-  			console.log('ERRROR: ' + reason);
+  			console.log('ERROR: ' + reason);
+  		})
+  }])
+  .controller('ContactsCtrl', ['$scope', '$rootScope', '$filter', '$q', '$interval', '$location', 'Contacts', function($scope, $rootScope, $filter, $q, $interval, $location, Contacts) {
+  	Contacts.get()
+  		.then(function(result){
+  			$scope.contacts = result;
+  		},
+  		function(reason){
+  			console.log('ERROR: ' + reason);
   		})
   }]);

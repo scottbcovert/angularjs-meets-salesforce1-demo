@@ -7,8 +7,8 @@ var myModule = angular.module('Default', ['ngRoute','ngAnimate','Default.service
 myModule.
   config(['$routeProvider', 'loadingProvider', function($routeProvider, loadingProvider) {
     $routeProvider
-    	.when('/', {templateUrl: sitePrefix+'/DefaultHome_Accounts', controller: 'HomeCtrl'})
-    	.when('/contacts', {templateUrl: sitePrefix+'/DefaultHome_Contacts', controller: 'ContactsCtrl'})
+    	.when('/', {templateUrl: sitePrefix+'/DefaultHome_Accounts', controller: 'RecordsCtrl', resolve: {recordType : function(){return 'Accounts'}}})
+    	.when('/contacts', {templateUrl: sitePrefix+'/DefaultHome_Contacts', controller: 'RecordsCtrl', resolve: {recordType : function(){return 'Contacts'}}})
     	.otherwise({redirectTo: '/'});
 
     //ngLoading Config

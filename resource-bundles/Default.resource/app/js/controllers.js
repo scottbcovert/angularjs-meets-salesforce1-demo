@@ -3,24 +3,11 @@
 /* Controllers */
 
 angular.module('Default.controllers', [])
-  .controller('HomeCtrl', ['$scope', '$rootScope', '$filter', '$q', '$interval', '$location', '$timeout', 'Interceptor', 'Accounts', function($scope, $rootScope, $filter, $q, $interval, $location, $timeout, Interceptor, Accounts) {
+  .controller('RecordsCtrl', ['$scope', '$rootScope', '$filter', '$q', '$interval', '$location', '$timeout', 'Interceptor', 'Records', 'recordType', function($scope, $rootScope, $filter, $q, $interval, $location, $timeout, Interceptor, Records, recordType) {
   	Interceptor.start();
-  	Accounts.get()
+  	Records.get(recordType)
   		.then(function(result){
-  			$scope.accounts = result;
-  			$timeout(function(){
-  				Interceptor.end();
-  			},2000);
-  		},
-  		function(reason){
-  			console.log('ERROR: ' + reason);
-  		})
-  }])
-  .controller('ContactsCtrl', ['$scope', '$rootScope', '$filter', '$q', '$interval', '$location', '$timeout', 'Interceptor', 'Contacts', function($scope, $rootScope, $filter, $q, $interval, $location, $timeout, Interceptor, Contacts) {
-  	Interceptor.start();
-  	Contacts.get()
-  		.then(function(result){
-  			$scope.contacts = result;
+  			$scope.records = result;
   			$timeout(function(){
   				Interceptor.end();
   			},2000);

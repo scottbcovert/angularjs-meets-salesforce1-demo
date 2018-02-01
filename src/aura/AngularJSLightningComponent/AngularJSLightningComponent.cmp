@@ -1,0 +1,3 @@
+<aura:component >
+    <lightning:container src="{!$Resource.todomvc + '/index.html'}" />
+</aura:component>

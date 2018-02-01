@@ -1,0 +1,34 @@
+<apex:page controller="AngularAppController" showHeader="false" standardStylesheets="false" sidebar="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0">
+
+<html>
+	<head>
+		<base href="/apex/AngularApp"/>
+		<meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Angular Salesforce Test</title>
+		<script type="text/javascript"> if(!window._sf) window._sf = {} </script>
+		
+			<script type="text/javascript">
+	    	window._sf.api = "{!JSENCODE($Api.Session_ID)}";
+				window._sf.node_modules_dir= "{!URLFOR($Resource.NodeModules)}/";
+				window._sf.app_dir = "{!URLFOR($Resource.AngularApp)}/";
+			</script>
+		
+		<link rel="stylesheet" href="{!URLFOR($Resource.AngularApp)}/styles/semantic.min.css" media="screen" charset="utf-8" />
+	</head>
+	<body>
+		<app>Loading...</app>
+
+		<script src="{!URLFOR($Resource.NodeModules)}/core-js/client/shim.min.js"></script>
+    <script src="{!URLFOR($Resource.NodeModules)}/zone.js/dist/zone.js"></script>
+    <script src="{!URLFOR($Resource.NodeModules)}/reflect-metadata/Reflect.js"></script>
+    <script src="{!URLFOR($Resource.NodeModules)}/systemjs/dist/system.src.js"></script>
+    <!-- 2. Configure SystemJS -->
+    <script src="{!URLFOR($Resource.AngularApp)}/systemjs.config.js"></script>
+    <script>
+      System.import('app').catch(function(err){ console.error(err); });
+    </script>
+	</body>
+</html>
+
+</apex:page>
